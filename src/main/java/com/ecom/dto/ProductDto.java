@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 public class ProductDto {
-	
+	// data transfer object truyền dữ liệu sản phẩm giữa các lớp
 	private int id;
 	
 	@NotBlank

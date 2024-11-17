@@ -21,7 +21,7 @@ import com.ecom.service.ProductService;
 
 @RestController
 public class ApiProductController {
-	
+	//defines RESTful APIs for managing products in the store
 	@Autowired
 	private ProductService productService;
 

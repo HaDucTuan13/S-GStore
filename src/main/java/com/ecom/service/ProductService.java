@@ -8,7 +8,7 @@ import com.ecom.dto.ProductResponse;
 import com.ecom.model.Product;
 
 public interface ProductService {
-
+//Giao diện định nghĩa các phương thức dịch vụ xử lý logic kinh doanh liên quan đến các sản phẩm trong cửa hàng
 	public Product saveProduct(Product product);
 
 	public List<Product> getAllProducts();

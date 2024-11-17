@@ -38,7 +38,7 @@ import jakarta.servlet.http.HttpSession;
 @Controller
 @RequestMapping("/admin/")
 public class AdminController {
-
+//Controller được sử dụng để xử lý các yêu cầu từ người dùng, liên quan đến việc quản lý từ phía admin
 	@Autowired
 	private CategoryService categoryService;
 
@@ -72,7 +72,7 @@ public class AdminController {
 	public String index() {
 		return "admin/index";
 	}
-
+	//them san pham
 	@GetMapping("/loadAddProduct")
 	public String loadAddProduct(Model m) {
 		List<Category> categories = categoryService.getAllCategory();

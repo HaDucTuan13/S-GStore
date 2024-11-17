@@ -30,7 +30,7 @@ import com.ecom.service.ProductService;
 
 @Service
 public class ProductServiceImpl implements ProductService {
-
+// lớp thực thi thực hiện các logic nghiệp vụ để quản lý sản phẩm trong ứng dụng
 	@Autowired
 	private ProductRepository productRepository;
 	
@@ -126,6 +126,7 @@ public class ProductServiceImpl implements ProductService {
 		return productRepository.findByTitleContainingIgnoreCaseOrCategoryContainingIgnoreCase(ch, ch);
 	}
 
+	
 	@Override
 	public Boolean saveProductApi(ProductDto productDto) {
 
@@ -144,7 +145,7 @@ public class ProductServiceImpl implements ProductService {
 		}
 		return true;
 	}
-
+	
 	@Override
 	public List<ProductDto> getAllProductsApi() {
 		List<Product> productList = productRepository.findAll();

@@ -19,7 +19,7 @@ import lombok.Setter;
 @Entity
 @Data
 public class Product {
-
+//Lớp Product đại diện cho bảng product trong cơ sở dữ liệu, với các trường tương ứng để lưu trữ thông tin sản phẩm.
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
